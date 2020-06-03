@@ -11,7 +11,8 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 
 
 
-export default function MenuInicial(){
+export default function MenuInicial({navigation}){
+    
     return(
         <SafeAreaView style={styles.container}>
         <StatusBar translucent backgroundColor="transparent" />
@@ -26,33 +27,33 @@ export default function MenuInicial(){
         </LinearGradient>
             <View style={styles.containerList}>
                 <View style={{flexDirection:'row', justifyContent:'space-around'}}>
-                    <TouchableOpacity style={styles.buttons}>
+                    <TouchableOpacity style={styles.buttons} onPress={() => navigation.push('NewAtend')}>
                         <AntDesign color="#1d80b2" size={35} name="addfile" style={{marginBottom:10}}/>
-                        <Text style={styles.BtTitulo}>NOVO CADASTRO</Text>
+                        <Text style={styles.BtTitulo}>NOVO ATENDIMENTO</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttons}>
+                    <TouchableOpacity style={styles.buttons} onPress={() => navigation.push('Pacientes')}>
                         <SimpleLineIcons color="#1d80b2" size={35} name="user" style={{marginBottom:10}}/>
                         <Text style={styles.BtTitulo}>PACIENTE</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style={{flexDirection:'row', justifyContent:'space-around'}}>
-                    <TouchableOpacity style={styles.buttons}>
+                    <TouchableOpacity style={styles.buttons} onPress={() => navigation.push('Agenda')}>
                         <SimpleLineIcons color="#1d80b2" size={35} name="calendar" style={{marginBottom:10}}/>
                         <Text style={styles.BtTitulo}>AGENDA</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttons}>
+                    <TouchableOpacity style={styles.buttons} onPress={() => navigation.push('CID')}>
                         <SimpleLineIcons color="#1d80b2" size={35} name="list" style={{marginBottom:10}}/>
                         <Text style={styles.BtTitulo}>CID</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style={{flexDirection:'row', justifyContent:'space-around'}}>
-                    <TouchableOpacity style={styles.buttons}>
+                    <TouchableOpacity style={styles.buttons} onPress={() => navigation.push('Calc')}>
                         <SimpleLineIcons color="#1d80b2" size={35} name="calculator" style={{marginBottom:10}}/>
                         <Text style={styles.BtTitulo}>CALCULADORA</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttons}>
+                    <TouchableOpacity style={styles.buttons} onPress={() => navigation.push('Atestado')}>
                         <SimpleLineIcons color="#1d80b2" size={35} name="doc" style={{marginBottom:10}}/>
                         <Text style={styles.BtTitulo}>ATESTADO</Text>
                     </TouchableOpacity>
