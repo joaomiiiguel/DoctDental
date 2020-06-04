@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity, SafeAreaView, StatusBar} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-
+//import SplashScreen from 'react-native-splash-screen';
 
 import styles from './styles';
 import ImgLogo from '../../assets/Logo.png';
@@ -13,6 +13,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 
 export default function MenuInicial({navigation}){
     
+
     return(
         <SafeAreaView style={styles.container}>
         <StatusBar translucent backgroundColor="transparent" />

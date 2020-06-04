@@ -40,6 +40,8 @@ Also, you'll need to the server running locally on your machine with the mock da
 - [React-Native-Linear-Gradient](https://github.com/react-native-community/react-native-linear-gradient) - Gradient Styles
 - [React-Native-SplashScreen](https://github.com/crazycodeboy/react-native-splash-screen) - Splashscreen of the App
 - [React-Native-Vector-Icons](https://github.com/oblador/react-native-vector-icons) - Icons
+- [React-Native-Masked-Text](https://github.com/benhurott/react-native-masked-text) - Masked text
+
 
 
 

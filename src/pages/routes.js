@@ -12,12 +12,14 @@ import CID from './CID';
 import Calc from './Calc';
 import Atestado from './Atestado';
 import Login from './Login';
+import NovoCadastro from './NovoCadastro';
 
 export default function Routes(){
     return(
         <NavigationContainer>
             <AppStack.Navigator  initialRouteName="Login">
                 <AppStack.Screen name="Login" component={Login} options={{headerShown: false}}/>
+                <AppStack.Screen name="NovoCadastro" component={NovoCadastro} options={{title: 'Novo Usuário', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
                 <AppStack.Screen name="MenuInicial" component={MenuInicial} options={{headerShown: false}}/>
                 <AppStack.Screen name="Pacientes" component={Pacientes} options={{title: 'Meus Pacientes', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
                 <AppStack.Screen name="NewAtend" component={NewAtend} options={{title: 'Novo Atendimento', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
