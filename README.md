@@ -1,12 +1,12 @@
 <h1 align="center">
-<img width="350" src="#">
+<img width="350" src="https://github.com/joaomiiiguel/DoctDental/blob/master/src/assets/LogoTransp.png">
 </h1>
 
 # DoctDental App 📱 
 
 
 ### Screenshot
-<img style="width: 100%" src="#">
+<img style="width: 100%" src="https://github.com/joaomiiiguel/DoctDental/blob/master/src/assets/Screens.png">
 
 
 ## About this Project
