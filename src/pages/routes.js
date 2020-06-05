@@ -13,6 +13,7 @@ import Calc from './Calc';
 import Atestado from './Atestado';
 import Login from './Login';
 import NovoCadastro from './NovoCadastro';
+import AnamneseNewAtend from './NewAtend/Anamnese';
 
 export default function Routes(){
     return(
@@ -22,11 +23,12 @@ export default function Routes(){
                 <AppStack.Screen name="NovoCadastro" component={NovoCadastro} options={{title: 'Novo Usuário', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
                 <AppStack.Screen name="MenuInicial" component={MenuInicial} options={{headerShown: false}}/>
                 <AppStack.Screen name="Pacientes" component={Pacientes} options={{title: 'Meus Pacientes', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
-                <AppStack.Screen name="NewAtend" component={NewAtend} options={{title: 'Novo Atendimento', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
+                <AppStack.Screen name="NewAtend" component={NewAtend} options={{title: 'Identificação', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
                 <AppStack.Screen name="Agenda" component={Agenda} options={{title: 'Agenda', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
                 <AppStack.Screen name="CID" component={CID} options={{title: 'CID', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
                 <AppStack.Screen name="Calc" component={Calc} options={{title: 'Calculadora', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
                 <AppStack.Screen name="Atestado" component={Atestado} options={{title: 'Atestado', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
+                <AppStack.Screen name="AnamneseNewAtend" component={AnamneseNewAtend} options={{title: 'Anamnese', headerStyle: {backgroundColor: '#1d80b2',},headerTintColor: '#fff', headerTitleAlign:'center' }}/>
             </AppStack.Navigator>
         </NavigationContainer>
     );

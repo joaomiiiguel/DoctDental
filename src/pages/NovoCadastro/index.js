@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity, StatusBar, TextInput, Button} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { TextInputMask } from 'react-native-masked-text'
+import { TextInputMask } from 'react-native-masked-text';
 
 
 import styles from './styles';

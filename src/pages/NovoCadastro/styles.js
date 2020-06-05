@@ -4,12 +4,6 @@ export default StyleSheet.create({
     container:{
         flex: 1,
     },
-    header:{
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-    },
     containerLogin:{
         flexDirection: 'column',
         width: "80%",
