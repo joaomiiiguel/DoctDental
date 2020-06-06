@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, StatusBar, TextInput, CheckBox} from 'react-native';
+import {View, Text, TouchableOpacity, StatusBar, TextInput} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
@@ -18,6 +18,8 @@ export default function NewAtend({navigation}){
     const [valueDataNasc, onChangeDataNasc] = React.useState();
     const [isSelectedMasc, setSelectionMasc] = useState(false);
     const [isSelectedFem, setSelectionFem] = useState(false);
+
+    const sexo = [{label: 'Masculino'}, {label: 'Feminino'}];
 
 
     return(
@@ -93,17 +95,23 @@ export default function NewAtend({navigation}){
                           }}                       
                     />
                     <Text style={styles.titulo}>Sexo:</Text>
-                    <View style={{flexDirection:'row', justifyContent:'space-between', marginTop: 20}}>
-                        <CheckBox  value={isSelectedMasc} onValueChange={setSelectionMasc} style={styles.checkbox}/>
-                        <Text >Masculino</Text>
-                        <CheckBox value={isSelectedFem} onValueChange={setSelectionFem} style={styles.checkbox}/>
-                        <Text>Feminino</Text>
+                    <View >
+                        <RadioButtonRN
+                            data={sexo}
+                            selectedBtn={(e) => console.log(e)}
+                            box={false}
+                            animationTypes={['zoomIn']}
+                            textColor={'#FFF'}
+                            activeColor={'#FFF'}
+                        />
                     </View>
+
+                    
                     
 
                     
                     <View style={{flexDirection: 'column', marginTop:50}}>
-                        <TouchableOpacity style={styles.buttons} onPress={() => navigation.push('AnamneseNewAtend')}>
+                        <TouchableOpacity style={styles.buttons} onPress={() => navigation.navigate('AnamneseNewAtend')}>
                             <Text style={styles.BtTitulo}>Avançar</Text>
                         </TouchableOpacity>
                     </View>
